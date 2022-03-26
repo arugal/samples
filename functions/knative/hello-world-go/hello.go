@@ -39,5 +39,5 @@ func HelloWorld(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	fmt.Fprint(w, body)
+	fmt.Fprint(w, string(body))
 }
