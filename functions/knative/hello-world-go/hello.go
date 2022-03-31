@@ -15,7 +15,7 @@ func whenErr(w http.ResponseWriter, err error) {
 }
 
 func HelloWorld(w http.ResponseWriter, r *http.Request) {
-	request, err := http.NewRequestWithContext(r.Context(), "POST", fmt.Sprintf("%s/end", "http://192.168.101.2:8081"), nil)
+	request, err := http.NewRequestWithContext(r.Context(), "POST", fmt.Sprintf("%s/end", "http://192.168.101.58:8081"), nil)
 	if err != nil {
 		whenErr(w, err)
 		return
